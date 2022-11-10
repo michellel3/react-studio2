@@ -1,7 +1,7 @@
 /* Add styling for your page here */
 
 .App {
-    
+    text-align: center;
 }
 
 .BakeryItem {
@@ -57,4 +57,16 @@
 
 .button:hover {
     cursor: pointer;
-  }
+}
+
+.menu {
+    float: left;
+}
+
+.cart {
+    float: left;
+}
+
+.content {
+    display: inline-block;
+}

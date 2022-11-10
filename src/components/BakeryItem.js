@@ -1,6 +1,7 @@
 // TODO: create a component that displays a single bakery item
 export default function BakeryItem(props) {
     const item = props.item;
+
     return  (
         <div className="BakeryItem">
             <img src={item.image}/>
@@ -15,7 +16,8 @@ export default function BakeryItem(props) {
                     {item.price}
                 </div>
                 <div className="add">
-                    <button className="button">
+                    <button className="button" onClick={() => 
+                        {props.updateCart(item.name, item.price)}}>
                         Add
                     </button>
                 </div>
